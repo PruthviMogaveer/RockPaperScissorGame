@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+
+  <body class="body">
+    <div class="content">
+      <div class="gameele">
+        <div class="usergameElement">
+          <div class="title">
+            <h2>Player</h2>
+          </div>
+          <div class="element">
+            <a id="rock" class="RPSclick" name="rock" onclick="userRes()"
+              ><img
+                src="./img/rock.png"
+                alt="rock"
+                class="item"
+            /></a>
+            <a id="paper" class="RPSclick" name="paper" onclick="userRes()"
+              ><img
+                src="./img/paper.png"
+                alt="paper"
+                class="item"
+            /></a>
+            <a id="scissor" class="RPSclick" name="scissor" onclick="userRes()"
+              ><img
+                src="./img/scissor.png"
+                alt="scissor"
+                class="item"
+            /></a>
+          </div>
+
+          <div class="userres">
+            <p id="userSelection"></p>
+            <p id="userPoint"></p>
+          </div>
+        </div>
+        <div class="comgameElement">
+          <div class="title">
+            <h2>Computer</h2>
+          </div>
+          <div class="element">
+            <img id="comItem" src="" alt="Computer selection" class="item" />
+          </div>
+          <div class="comres">
+            <p id="comSelection"></p>
+            <p id="comPoint"></p>
+          </div>
+        </div>
+      </div>
+      <div id="result" class="result">
+        <p id="winner"></p>
+
+        <p id="tournamentWinner"></p>
+      </div>
+      <div class="reset">
+        <a onclick="reset()" name="reset"
+          ><img
+            src="./img/reset.png"
+            alt="reset"
+            class="item"
+        /></a>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
